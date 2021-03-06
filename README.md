@@ -1,13 +1,13 @@
 # ultratest
 
-App can be reached at:
+App web address:
 https://ultranautstest.netlify.app/
 
 Each iteration can be accessed through Github:
 Clone main branch:
 https://github.com/cbw29512/ultratest.git
 
-Each interaction are saved on the main GitHub branch under these branches:
+Each interaction is saved on the main GitHub branch under these branches:
 iteration1
 iteration2
 iteration3
