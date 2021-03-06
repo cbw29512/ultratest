@@ -1,24 +1,42 @@
 function checkPassword() {
-  const alphabet =
-    "A, a, B, b, C, c, D, d, E, e, F, f, G, g, H, h, I, i, J, j, K, k, L, l, M, m, N, n, O, o, P, p, Q, q, R, r, S, s, T, t, U, u, V, v, W, w, X, x, Y, y, Z ,z";
+  const adminpw = document.getElementById("username").value;
+  const pw = document.getElementById("password").value;
 
-  var pw = document.getElementById("password").value;
-
-  // // check for an empty password
-  // if (pw == "") {
-  //   document.getElementById("message").innerHTML =
-  //     "Fill in the password please!";
-  //   return False;
-  // }
-
-  if (pw.length < 8) {
-    alert("Password length must be a minimun 8 characters!");
-  } else if (pw == !isNaN) {
-    alert("Password must contain one number!");
-    console.log(pw);
-  } else if (pw == alphabet) {
-    alert("Password must contain one letter!");
+  if (adminpw == "admin" && pw.length < 13 && !pw.match(/[!@#$%^&*]/)) {
+    alert(
+      "Admin password must be over 13 characters long and contain a special character"
+    );
+    return false;
+  } else if (adminpw == "admin" && !pw.match(/[!@#$%^&*]/)) {
+    alert("Admin password must contain a special character");
+    return false;
+  } else if (adminpw == "admin" && pw.length < 13) {
+    alert("Admin password must be over 13 characters long");
+    return false;
+  } else if (pw.length < 8 && !pw.match(/[a-z]/g) && /[A-Z]/g) {
+    alert(
+      "Password must be over 8 characters and must include atleast one letter"
+    );
+    return false;
+  } else if (pw.length < 8 && !pw.match(/[0-9]/g)) {
+    alert(
+      "Password must be over 8 characters and must include atleast one number"
+    );
+    return false;
+  } else if (!pw.match(/[a-z]/g) && /[A-Z]/g) {
+    alert("Password must include atleast one letter");
+    return false;
+  } else if (!pw.match(/[0-9]/g)) {
+    alert("Password must include atleast one number");
+    return false;
+  } else if (!pw.match(/[0-9]/g) && !pw.match(/[a-z]/g) && /[A-Z]/g) {
+    alert("Password must include atleast one number and one number");
+    return false;
+  } else if (pw.length < 8) {
+    alert("Password must be over 8 characters");
+    return false;
   } else {
-    alert("Password is correct!");
+    alert("Password is accepted");
+    return true;
   }
 }
