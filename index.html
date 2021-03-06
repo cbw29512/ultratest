@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Ultranauts Coding Challenge</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="container">
+            <!-- Title  -->
+            <h1 id="title" class="font-effect-fire-animation">Ultranauts</h1>
+            
+                <!-- Form for submission -->
+                <form onsubmit = "return checkPassword()"; 
+
+                <!-- User name -->
+                <label for="uname" id="username"><strong>Username</strong></label>
+                <input type="text" placeholder="Enter Username" name="uname" required><br><br>
+            
+                <!-- Password -->
+                <label for="psw" id="pswd"><strong>Password</strong></label>
+                <input type = "password" id = "password" value = "" placeholder="Enter Username" required><br><br>
+                
+                <!-- Submit Button -->
+                <button type="submit" value = "Submit">Submit</button><br><br>
+                
+                <!-- Click to reset fields -->  
+                <button type = "reset" value = "Reset Form" >Reset</button><br>  
+                
+                <span id = "message" style="color:red"> </span><br><br>
+
+                </form>
+
+        </div>
+
+        
+        <script src="script.js" async defer></script>
+    </body>
+</html>
