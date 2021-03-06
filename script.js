@@ -13,14 +13,14 @@ function checkPassword() {
   } else if (adminpw == "admin" && pw.length < 13) {
     alert("Admin password must be over 13 characters long");
     return false;
-  } else if (pw.length < 8 && !pw.match(/[a-z]/g) && /[A-Z]/g) {
+  } else if (pw.length < 10 && !pw.match(/[a-z]/g) && /[A-Z]/g) {
     alert(
-      "Password must be over 8 characters and must include atleast one letter"
+      "Password must be over 10 characters and must include atleast one letter"
     );
     return false;
-  } else if (pw.length < 8 && !pw.match(/[0-9]/g)) {
+  } else if (pw.length < 10 && !pw.match(/[0-9]/g)) {
     alert(
-      "Password must be over 8 characters and must include atleast one number"
+      "Password must be over 10 characters and must include atleast one number"
     );
     return false;
   } else if (!pw.match(/[a-z]/g) && /[A-Z]/g) {
@@ -32,8 +32,8 @@ function checkPassword() {
   } else if (!pw.match(/[0-9]/g) && !pw.match(/[a-z]/g) && /[A-Z]/g) {
     alert("Password must include atleast one number and one number");
     return false;
-  } else if (pw.length < 8) {
-    alert("Password must be over 8 characters");
+  } else if (pw.length < 10) {
+    alert("Password must be over 10 characters");
     return false;
   } else {
     alert("Password is accepted");
