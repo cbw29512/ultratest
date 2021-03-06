@@ -28,26 +28,26 @@ body {
 }
 
 /* Makes the password requirements float left */
-p {
+/* p {
     float: left;
-}
+} */
 
 /* Add a green text color and a checkmark when the requirements are right */
-.valid {
+/* .valid {
     color: green;
   }
-  
-  .valid:before {
+   */
+  /* .valid:before {
     position: relative;
     content: "✔";
-  }
+  } */
   
   /* Add a red text color and an "x" when the requirements are wrong */
-  .invalid {
+  /* .invalid {
     color: red;
-  }
+  } */
   
-  .invalid:before {
+  /* .invalid:before {
     position: relative;
     content: "✖";
-  }
+  } */
