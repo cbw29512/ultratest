@@ -12,13 +12,20 @@ function checkPassword() {
   // }
 
   if (pw.length < 8) {
-    alert("Password length must be a minimun 8 characters!");
-  } else if (pw == !isNaN) {
-    alert("Password must contain one number!");
     console.log(pw);
+    alert("Password length must be a minimun 8 characters!");
+    
+  } else if (pw == !isNaN) {
+    console.log(pw);
+    alert("Password must contain one number!");
+    
   } else if (pw == alphabet) {
+    console.log(pw);
     alert("Password must contain one letter!");
+
   } else {
+    console.log(pw);
     alert("Password is correct!");
+    
   }
 }
