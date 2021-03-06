@@ -1,4 +1,18 @@
 # ultratest
+
+App can be reached at:
+https://ultranautstest.netlify.app/
+
+Each iteration can be accessed through Github:
+Clone main branch:
+https://github.com/cbw29512/ultratest.git
+
+Each interaction are saved on the main GitHub branch under these branches:
+iteration1
+iteration2
+iteration3
+iteration4
+
 Instructions | Password Coding Simulation
 Instructions
 Create a tool that verifies the strength of a password (see Details below).
@@ -65,5 +79,3 @@ The password requirements for all users have become more strict:
 Passwords for regular users must now be at least 10 characters in length
 
 Passwords for Admin users must now include at least 3 special characters
-
-Ultranauts tight.png
