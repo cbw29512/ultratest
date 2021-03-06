@@ -2,13 +2,13 @@ function checkPassword() {
   const adminpw = document.getElementById("username").value;
   const pw = document.getElementById("password").value;
 
-  if (adminpw == "admin" && pw.length < 13 && !pw.match(/[!@#$%^&*]/)) {
+  if (adminpw == "admin" && pw.length < 13 && !pw.match(/[!@#$%^&*]{3}/)) {
     alert(
-      "Admin password must be over 13 characters long and contain a special character"
+      "Admin password must be over 13 characters long and contain 3 special character"
     );
     return false;
-  } else if (adminpw == "admin" && !pw.match(/[!@#$%^&*]/)) {
-    alert("Admin password must contain a special character");
+  } else if (adminpw == "admin" && !pw.match(/[!@#$%^&*]{3}/)) {
+    alert("Admin password must contain 3 special character");
     return false;
   } else if (adminpw == "admin" && pw.length < 13) {
     alert("Admin password must be over 13 characters long");
