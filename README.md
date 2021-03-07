@@ -1,11 +1,24 @@
 # ultratest
 
-App web address:
+===============================================================
+*TESTING* Run test framework:
+Local machine ensure python 3 is installed:
+https://www.python.org/downloads/
+
+Install Selenium
+https://pythonspot.com/selenium-install/
+
+*TERMINAL RUN*
+Ultratest.py 
+=============================================================== 
+
+*APPLICATION WEB ADDRESS* 
 https://ultranautstest.netlify.app/
 
-Instructions for running locally:
+===============================================================
 
-Clone main branch:
+Instructions for running locally:
+*GIT HUB Clone main branch*
  https://github.com/cbw29512/ultratest.git
 
 Open in Visual Studio Basics
@@ -13,13 +26,14 @@ Open in Visual Studio Basics
 install Extension Live server 
 
 Bottom right of tool bar click "Go Live"
-
+===============================================================
 
 Each interaction is saved on the main GitHub branch under these branches:
 iteration1
 iteration2
 iteration3
 iteration4
+===============================================================
 
 Instructions | Password Coding Simulation
 Instructions
