@@ -7,34 +7,47 @@ function checkPassword() {
       "Admin password must be over 13 characters long and contain a special character"
     );
     return false;
-  } else if ((adminpw == "admin") && (!pw.match("^(?=.*[!@#$%^&*])$"))) {
+
+  } else if ((adminpw == "admin") && pw.length >= 13 && (!pw.match("^(?=.*[!@#$%^&*])$"))) {
     alert("Admin password must contain a special character");
     return false;
-  } else if ((adminpw == "admin") && (pw.length < 13)) {
+
+  } else if ((adminpw == "admin") && (pw.length < 13) && (pw.match("^(?=.*[!@#$%^&*])$"))) {
     alert("Admin password must be over 13 characters long");
     return false;
-  } else if (pw.length < 8 && !pw.match(/[a-z]/g) && /[A-Z]/g) {
+
+  } else if ((adminpw == "admin") && (pw.length >= 13) && (pw.match("^(?=.*[!@#$%^&*])$"))) {
+    alert("Admin password is accepted");
+    return true; 
+
+  } else if (pw.length < 8 && !pw.match(/[A-Za-z]/g) && pw.match(/[0-9]/g)) {
     alert(
       "Password must be over 8 characters and must include atleast one letter"
     );
     return false;
-  } else if (pw.length < 8 && !pw.match(/[0-9]/g)) {
+
+  } else if (pw.length < 8 && pw.match(/[A-Za-z]/g) && !pw.match(/[0-9]/g)) {
     alert(
       "Password must be over 8 characters and must include atleast one number"
     );
     return false;
-  } else if (!pw.match(/[a-z]/g) && /[A-Z]/g) {
+
+  } else if (!pw.match(/[A-Za-z]/g) && pw.length >= 8 && pw.match(/[0-9]/g)) {
     alert("Password must include atleast one letter");
     return false;
-  } else if (!pw.match(/[0-9]/g)) {
+
+  } else if (pw.match(/[A-Za-z]/g) && pw.length >= 8 && !pw.match(/[0-9]/g)) {
     alert("Password must include atleast one number");
     return false;
-  } else if (!pw.match(/[0-9]/g) && !pw.match(/[a-z]/g) && /[A-Z]/g) {
+
+  } else if (pw.length >= 8 && !pw.match(/[0-9]/g) && !pw.match(/[A-Za-z]/g)) {
     alert("Password must include atleast one number and one number");
     return false;
+
   } else if (pw.length < 8) {
     alert("Password must be over 8 characters");
     return false;
+
   } else {
     alert("Password is accepted");
     return true;
