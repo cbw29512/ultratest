@@ -17,7 +17,7 @@ function checkPassword() {
     document.getElementById('myform').reset();
     return false;
     
-  } else if (adminpw == "admin" && pw.match(/[!@#$%^&*]{3}/) && !pw.match(/[A-Za-z]/g) && pw.match(/[0-9]/g)) {
+  } else if (adminpw == "admin" && pw.match(/[!@#$%^&*]{3}/) && pw.match(/[A-Za-z]/g) && pw.match(/[0-9]/g)) {
     alert("Admin password is accepted");
     document.getElementById('myform').reset();
     return false;
