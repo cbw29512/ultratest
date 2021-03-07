@@ -52,3 +52,9 @@ function checkPassword() {
     return true;
   }
 }
+
+function eraseText() {
+  if (document.getElementsByTagName("span").value == "") {
+  document.getElementById("output").value = "";
+  }
+}
