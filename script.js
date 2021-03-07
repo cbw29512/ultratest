@@ -7,17 +7,17 @@ function checkPassword() {
     document.getElementById('myform').reset();
     return false;
   
-  } else if (usenam == "admin" && !pw.match(/[!@#$%^&*]{3}/)) {
+  } else if (usenam == "admin" && pw.length >= 13 && !pw.match(/[!@#$%^&*]{3}/)) {
     document.getElementById("message2").textContent="Admin password must contain 3 special character";
     document.getElementById('myform').reset();
     return false;
   
-  } else if (usenam == "admin" && pw.length < 13) {
+  } else if (usenam == "admin" && pw.length < 13 && pw.match(/[!@#$%^&*]{3}/)) {
     document.getElementById("message3").textContent="Admin password must be over 13 characters long";
     document.getElementById('myform').reset();
     return false;
     
-  } else if (usenam == "admin" && pw.match(/[!@#$%^&*]{3}/) && pw.match(/[A-Za-z]/g) && pw.match(/[0-9]/g)) {
+  } else if (usenam == "admin" && pw.length >= 13 && pw.match(/[!@#$%^&*]{3}/)) {
     alert("Admin password is accepted");
     document.getElementById('myform').reset();
     return false;
@@ -29,11 +29,6 @@ function checkPassword() {
   
   } else if (pw.length < 10 && !pw.match(/[0-9]/g)) {
     document.getElementById("message5").textContent="Password must be over 10 characters and must include atleast one number";
-    document.getElementById('myform').reset();
-    return false;
-  
-  } else if (pw.match(/[A-Za-z]/g) && pw.match(/[0-9]/g)) {
-    document.getElementById("message6").textContent="Admin password must contain 3 special character";
     document.getElementById('myform').reset();
     return false;
 
@@ -60,6 +55,8 @@ function checkPassword() {
 
 function eraseText() {
   if (document.getElementsByTagName("span").value == "") {
-  document.getElementById("output").value = "";
+    return null;
+  } else {
+    document.getElementById("output").value = "";
   }
 }
