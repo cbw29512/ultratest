@@ -9,16 +9,23 @@ https://www.python.org/downloads/
 Install Selenium
 https://pythonspot.com/selenium-install/
 
+Download chrome driver and unzip locally
+https://sites.google.com/a/chromium.org/chromedriver/downloads
+
+Within file ultrtest.py find line with and replace path in paranthese to local machine location from chrome driver
+self.driver = webdriver.Chrome('/your/local/path/chromedriver')
+
 *TERMINAL RUN*
-python3 Ultratest.py 
+cd into ultranautstest folder run python file
+$ python3 Ultratest.py 
 =============================================================== 
 
-*APPLICATION WEB ADDRESS* 
+*APPLICATION WEB ADDRESS* This is the hosted web based version of app
 https://ultranautstest.netlify.app/
 
 ===============================================================
 
-Instructions for running locally:
+Instructions for running app locally:
 *GIT HUB Clone main branch*
  https://github.com/cbw29512/ultratest.git
 
