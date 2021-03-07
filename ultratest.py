@@ -1,9 +1,10 @@
 # Location of my local file for chromedriver
 # ('/home/chriswilson/Downloads/chromedriver_linux64/chromedriver')
 import unittest
+import logging, time
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-import logging
+
 
 class ChromeSearch(unittest.TestCase):
 
@@ -25,7 +26,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("password1234!!!")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
-        driver.console.log('')
+        time.sleep(3)
         # Checks admin password if too short 
         username = driver.find_element_by_id("username")
         username.send_keys("admin")
@@ -33,6 +34,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("passrd123!!!")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checks admin password if no letters
         username = driver.find_element_by_id("username")
         username.send_keys("admin")
@@ -40,6 +42,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("1231231231!!!")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checks admin password if no numbers
         username = driver.find_element_by_id("username")
         username.send_keys("admin")
@@ -47,6 +50,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("qwertasdfg!!!")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checks admin password if no special characters
         username = driver.find_element_by_id("username")
         username.send_keys("admin")
@@ -54,6 +58,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("qwertasdfg123")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checkes a normal user with correct password
         username = driver.find_element_by_id("username")
         username.send_keys("normal")
@@ -61,6 +66,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("password12")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checks normal user password if no numbers and too short
         username = driver.find_element_by_id("username")
         username.send_keys("normal")
@@ -68,6 +74,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("passw")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checks normal password if no numbers
         username = driver.find_element_by_id("username")
         username.send_keys("normal")
@@ -75,6 +82,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("passworder")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checks normal password if no letters
         username = driver.find_element_by_id("username")
         username.send_keys("normal")
@@ -82,6 +90,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("1234567890")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
         # Checks normal username is close to admin
         username = driver.find_element_by_id("username")
         username.send_keys("adminn")
@@ -89,9 +98,14 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("password1234!!!")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        time.sleep(3)
+        
         # Checks URL to ensure its correct
         assert "https://ultranautstest.netlify.app/?" == driver.current_url
         
+        logs = driver.get_log("browser")
+        print(logs)
+
         #Closes teesting
     def tearDown(self):
         self.driver.close()

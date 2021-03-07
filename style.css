@@ -28,7 +28,7 @@ body {
 }
 
 
-Makes the password requirements float left */
+/*Makes the password requirements float left */
 p {
     float: left;
 }

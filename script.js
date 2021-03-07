@@ -74,9 +74,9 @@ function checkPassword() {
 
   } else {
     document.getElementById("message2").textContent="Password is accepted";
+    document.getElementById('myform').reset();
     console.log('true');
     return true;
-
 
   }
 }

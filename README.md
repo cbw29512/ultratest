@@ -23,6 +23,14 @@ $ python3 Ultratest.py
 *APPLICATION WEB ADDRESS* This is the hosted web based version of app
 https://ultranautstest.netlify.app/
 
+Go to Web page. Enter username and password.
+
+If username AND password are correct then it will flash 
+Admin password or normal password is correct and reset
+
+If any of the requirements are not meet, it will give a warning
+in red telling the user what needs to be changed and it will reset 
+when the new username and password is entered and submit is clicked
 ===============================================================
 
 Instructions for running app locally:
