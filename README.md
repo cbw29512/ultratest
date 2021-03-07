@@ -1,5 +1,6 @@
 # ultranauts test 
 
+Instruction:
 ===============================================================
 *TESTING* Run test framework:
 Local machine ensure python 3 is installed:
@@ -9,7 +10,7 @@ Install Selenium
 https://pythonspot.com/selenium-install/
 
 *TERMINAL RUN*
-Ultratest.py 
+python3 Ultratest.py 
 =============================================================== 
 
 *APPLICATION WEB ADDRESS* 

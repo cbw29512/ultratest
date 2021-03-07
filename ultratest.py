@@ -24,6 +24,7 @@ class ChromeSearch(unittest.TestCase):
         password.send_keys("password1234!!!")
         submitbutton = driver.find_element_by_id("submitButton")
         submitbutton.send_keys(Keys.RETURN)
+        driver.console.log('')
         # Checks admin password if too short 
         username = driver.find_element_by_id("username")
         username.send_keys("admin")
