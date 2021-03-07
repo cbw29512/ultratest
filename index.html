@@ -26,7 +26,9 @@
       </h1>
 
       <!-- Form for submission -->
-      <form onsubmit="return checkPassword()" ; <!-- User name -->
+      <form id="myform" onsubmit="return checkPassword()" ; 
+      
+      <!-- User name -->
         <label for="uname" id="usnm"><strong>Username</strong></label>
         <input
           type="text"
@@ -47,7 +49,7 @@
         /><br /><br />
 
         <!-- Submit Button -->
-        <button type="submit" value="Submit">Submit</button><br /><br />
+        <button type="submit" value="Reset Form">Submit</button><br /><br />
 
         <!-- Click to reset fields -->
         <button
@@ -57,6 +59,8 @@
         >
           Reset</button
         ><br /><br />
+
+        
 
         <span id="message1" style="color: red"> </span><br />
         <span id="message2" style="color: red"> </span><br />
