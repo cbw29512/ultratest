@@ -4,55 +4,73 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html lang="en">
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge">
-        <title>Ultranauts Coding Challenge</title>
-        <meta name="description" content="">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-        <div id="container">
-            <!-- Title  -->
-            <h1 id="title" class="font-effect-fire-animation">Ultranauts Challenge</h1>
-            
-                <!-- Form for submission -->
-                <form onsubmit = "return checkPassword()"; 
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>Ultranauts Coding Challenge</title>
+    <meta name="description" content="" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!--[if lt IE 7]>
+      <p class="browsehappy">
+        You are using an <strong>outdated</strong> browser. Please
+        <a href="#">upgrade your browser</a> to improve your experience.
+      </p>
+    <![endif]-->
+    <div id="container">
+      <!-- Title  -->
+      <h1 id="title" class="font-effect-fire-animation">
+        Ultranauts Challenge
+      </h1>
 
-                <!-- User name -->
-                <label for="uname" id="usnm"><strong>Username</strong></label>
-                <input type="text" id = "username" placeholder="Enter Username" name="uname" required><br><br>
-            
-                <!-- Password -->
-                <label for="psw" id="pswd"><strong>Password</strong></label>
-                <input type = "password" id = "password" value = "" placeholder="Enter Password" required><br><br>
-                
-                <!-- Submit Button -->
-                <button type="submit" value = "Submit">Submit</button><br><br>
-                
-                <!-- Click to reset fields -->  
-                <button type = "reset" value = "Reset Form" >Reset</button><br>  
-                
-                <span id = "message" style="color:red"> </span><br><br>
-                <div>
-                <p>Admin password must be over 13 characters</p>
-                <p>Admin password must contain atleast three special characrters</p>
-                <p>Regular users passwords must be over 10 characters</p>
-                <p>Regular users password must contain atleast one letter</p>
-                <p>Regular users password must contain atleast one number</p>
-                <p></p>
-                <p></p>
-                </div>
+      <!-- Form for submission -->
+      <form onsubmit="return checkPassword()" ; <!-- User name -->
+        <label for="uname" id="usnm"><strong>Username</strong></label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter Username"
+          name="uname"
+          required
+        /><br /><br />
 
-                </form>
+        <!-- Password -->
+        <label for="psw" id="pswd"><strong>Password</strong></label>
+        <input
+          type="password"
+          id="password"
+          value=""
+          placeholder="Enter Password"
+          required
+        /><br /><br />
 
-        </div>
+        <!-- Submit Button -->
+        <button type="submit" value="Submit">Submit</button><br /><br />
 
-        
-        <script src="script.js" async defer></script>
-    </body>
+        <!-- Click to reset fields -->
+        <button
+          type="reset"
+          value="Reset Form"
+          onClick="window.location.reload()"
+        >
+          Reset</button
+        ><br /><br />
+
+        <span id="message1" style="color: red"> </span><br />
+        <span id="message2" style="color: red"> </span><br />
+        <span id="message3" style="color: red"> </span><br />
+        <span id="message4" style="color: red"> </span><br />
+        <span id="message5" style="color: red"> </span><br />
+        <span id="message6" style="color: red"> </span><br />
+        <span id="message7" style="color: red"> </span><br />
+        <span id="message8" style="color: red"> </span><br />
+        <span id="message9" style="color: red"> </span><br />
+        <span id="message10" style="color: red"> </span><br />
+      </form>
+    </div>
+
+    <script src="script.js" async defer></script>
+  </body>
 </html>
