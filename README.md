@@ -3,9 +3,17 @@
 App web address:
 https://ultranautstest.netlify.app/
 
-Each iteration can be accessed through Github:
+Instructions for running locally:
+
 Clone main branch:
-https://github.com/cbw29512/ultratest.git
+ https://github.com/cbw29512/ultratest.git
+
+Open in Visual Studio Basics
+
+install Extension Live server 
+
+Bottom right of tool bar click "Go Live"
+
 
 Each interaction is saved on the main GitHub branch under these branches:
 iteration1
