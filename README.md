@@ -1,5 +1,7 @@
 # ultranauts test 
 
+I decided to go with a web-based app given the nature of the assignment. I have found that web-based apps are the easiest to use and test. Also, generally the most compatible and require the least amount of additional addons to a person's machine. The app can be easily tested through the web interface. Go to the site address provided and enter your username and password. If the password is correct under the constrants, it will flash red text that states either Admin or Normal password excepted. If there are any issues it will return, in that same red text, what needs to be corrected and the text will stay there until another test is run. I have also included a python coded automated testing feature. It should run on any machine with python installed either from a terminal or an IDE. 
+
 Instruction:
 ===============================================================
 *TESTING* Run test framework:
