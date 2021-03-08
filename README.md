@@ -14,7 +14,7 @@ https://pythonspot.com/selenium-install/
 Download chrome driver and unzip locally
 https://sites.google.com/a/chromium.org/chromedriver/downloads
 
-Within file ultrtest.py find line with and replace path in paranthese to local machine location from chrome driver
+Within file ultratest.py find line with and replace path in parentheses to local machine location from chrome driver
 self.driver = webdriver.Chrome('/your/local/path/chromedriver')
 
 *TERMINAL RUN*
@@ -31,7 +31,7 @@ If username AND password are correct then it will flash
 Admin password or normal password is correct and reset
 
 If any of the requirements are not meet, it will give a warning
-in red telling the user what needs to be changed and it will reset 
+in red telling the user what needs to be changed, and it will reset 
 when the new username and password is entered and submit is clicked
 ===============================================================
 
@@ -43,7 +43,7 @@ Open in Visual Studio Basics
 
 install Extension Live server 
 
-Bottom right of tool bar click "Go Live"
+Bottom right of toolbar click "Go Live"
 ===============================================================
 
 Each interaction is saved on the main GitHub branch under these branches:
